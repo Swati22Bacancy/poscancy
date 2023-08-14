@@ -1,5 +1,4 @@
 <script setup>
-import AuthProvider from '@/views/pages/authentication/AuthProvider.vue';
 import logo from '@images/logo.svg?raw';
 
 const form = ref({
@@ -28,14 +27,11 @@ const isPasswordVisible = ref(false)
         </template>
 
         <VCardTitle class="text-2xl font-weight-bold">
-          sneat
+          Poscancy
         </VCardTitle>
       </VCardItem>
 
       <VCardText class="pt-2">
-        <h5 class="text-h5 mb-1">
-          Welcome to sneat! 👋🏻
-        </h5>
         <p class="mb-0">
           Please sign-in to your account and start the adventure
         </p>
@@ -90,36 +86,7 @@ const isPasswordVisible = ref(false)
               </VBtn>
             </VCol>
 
-            <!-- create account -->
-            <VCol
-              cols="12"
-              class="text-center text-base"
-            >
-              <span>New on our platform?</span>
-              <RouterLink
-                class="text-primary ms-2"
-                to="/register"
-              >
-                Create an account
-              </RouterLink>
-            </VCol>
-
-            <VCol
-              cols="12"
-              class="d-flex align-center"
-            >
-              <VDivider />
-              <span class="mx-4">or</span>
-              <VDivider />
-            </VCol>
-
-            <!-- auth providers -->
-            <VCol
-              cols="12"
-              class="text-center"
-            >
-              <AuthProvider />
-            </VCol>
+            
           </VRow>
         </VForm>
       </VCardText>
