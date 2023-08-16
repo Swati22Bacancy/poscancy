@@ -37,12 +37,6 @@ class PostController extends Controller
         return response()->json($post);
     }
 
-    public function edit($id)
-    {
-        $post = Post::findOrFail($id);
-        return view('posts.edit', compact('post'));
-    }
-
     public function update(Request $request, $id)
     {
         $post = Post::findOrFail($id);
